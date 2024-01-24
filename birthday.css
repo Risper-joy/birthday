@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:antiquewhite;
+  }
+  
+  .cake {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color:cyan;
+    border-radius: 15px 15px 0 0;
+    right: 400px;
+    
+  }
+  
+  .candle {
+    position: absolute;
+    bottom: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+  }
+  
+  .flame {
+    position: absolute;
+    bottom: 380px;
+    left: 47%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 30px;
+    background: conic-gradient(from 45deg, #FFD700, #FF4500, #FFD700);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: flameAnimation 1s infinite alternate;
+  }
+  img{
+    width:auto;
+    height: 400px;
+    padding-right: 590px;
+  }
+  h1{
+    padding-bottom: 100px;
+    padding-right: 25px;
+  }
+  @keyframes flameAnimation {
+    0% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  
